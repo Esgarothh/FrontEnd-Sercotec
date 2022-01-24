@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">-->
+      <link rel="icon" href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-32x32.png" sizes="32x32">
+      <link rel="icon" href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-192x192.png" sizes="192x192">
+      <link rel="apple-touch-icon-precomposed" href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-180x180.png">
+      <meta name="msapplication-TileImage" content="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-270x270.png">
+      <title>Sercotec - Activo Fijo</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+      <!-- This page CSS -->
+      <!-- chartist CSS -->
+      <link href="../assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+      <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+      <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+      <!--c3 CSS -->
+      <link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- Dashboard 1 Page CSS -->
+      <link href="css/pages/dashboard3.css" rel="stylesheet">
+      <!-- You can change the theme colors from here -->
+      <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+      
+
+           <link rel="stylesheet" href="../assets/plugins/dropify/dist/css/dropify.min.css">
+
+
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <style type="text/css">
+         
+         .table td, .table th {
+                                  padding: 0.75rem;
+                                  vertical-align: top;
+                                  border-top: 0px !important;
+}
+
+      </style>
+
+
+   </head>
+   <body class="fix-header fix-sidebar card-no-border">
+      <div class="preloader">
+         <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Sercotec</p>
+         </div>
+      </div>
+      <div id="main-wrapper">
+         <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">
+                     <b>
+                        <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                     </b>
+                     <span>
+                        <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                        <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                     </span>
+                  </a>
+               </div>
+               <div class="navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                     <!-- <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li> -->
+                  </ul>
+                  <ul class="navbar-nav my-lg-0">
+                     <li class="nav-item hidden-xs-down search-box">
+                        <a class="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                        <form class="app-search">
+                           <input type="text" class="form-control" placeholder="Ingrese un valor a Buscar y Presione ENTER"> <a class="srh-btn"><i class="ti-close"></i></a> 
+                        </form>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="mdi mdi-message"></i>
+                           <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        </a>
+                        <div class="dropdown-menu  dropdown-menu-right  mailbox animated bounceInDown">
+                           <ul>
+                              <li>
+                                 <div class="drop-title">Notificaciones</div>
+                              </li>
+                              <li>
+                                 <div class="message-center">
+                                    <a href="#">
+                                       <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
+                                       <div class="mail-contnet">
+                                          <h5>Notificación de Prueba 1</h5>
+                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
+                                       </div>
+                                    </a>
+                                    <a href="#">
+                                       <div class="btn btn-success btn-circle"><i class="ti-calendar"></i></div>
+                                       <div class="mail-contnet">
+                                          <h5>Notificación de Prueba 2</h5>
+                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
+                                       </div>
+                                    </a>
+                                    <a href="#">
+                                       <div class="btn btn-info btn-circle"><i class="ti-settings"></i></div>
+                                       <div class="mail-contnet">
+                                          <h5>Notificación de Prueba 3</h5>
+                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
+                                       </div>
+                                    </a>
+                                    <a href="#">
+                                       <div class="btn btn-primary btn-circle"><i class="ti-user"></i></div>
+                                       <div class="mail-contnet">
+                                          <h5>Notificación de Prueba 4</h5>
+                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
+                                       </div>
+                                    </a>
+                                 </div>
+                              </li>
+                              <li>
+                                 <a class="nav-link text-center" href="javascript:void(0);"> <strong>Ver Todas las Notificaciones</strong> <i class="fa fa-angle-right"></i> </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                        <div class="dropdown-menu dropdown-menu-right animated bounceInDown">
+                           <ul class="dropdown-user">
+                              <li>
+                                 <div class="dw-user-box">
+                                    <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                    <div class="u-text">
+                                       <h4>Jorge Luis Silva López</h4>
+                                       <p class="text-muted">jorge.silva@social-it.cl</p>
+                                       <a href="pages-profile.html" class="btn btn-rounded btn-success btn-sm">Editar</a>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#"><i class="ti-user"></i> Editar Cuenta</a></li>
+                              <li><a href="#"><i class="ti-wallet"></i> Mis registros</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#"><i class="ti-settings"></i> Cambiar Contraseña</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <div class="side-mini-panel">
+            <ul class="mini-nav">
+               <!--<div class="togglediv hidden-sm-down">
+                  <a href="javascript:void(0)" id="togglebtn"><i class="ti-menu"></i></a>
+                  </div>-->
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-tachometer-alt"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Dashboard</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href="index.html">Inicio</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-users"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Gestión de Sistema</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href="administrador-de-usuarios.html" class="active">Administrador de Usuarios</a></li>
+                     </ul>
+                  </div>
+               </li>
+
+
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-file-alt"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Registro de Bienes</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href="registro-de-bienes-por-Articulo.html" >Registro de Bienes por Artículo</a></li>
+                        <li><a href="registro-de-bienes-por-Factura.html" >Registro de Bienes por Factura</a></li>
+                        <li><a href="registro-de-bienes-masivo.html" >Registro de Bienes Masivo</a></li>
+                        <li><a href="listado-de-bienes.html" >Listados de Bienes</a></li>
+                     </ul>
+                  </div>
+               </li>
+
+               
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-check-circle"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Gestión de Bienes Alta</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href="." class="active">Ejemplo Menú 1</a></li>
+                        <li><a href=".">Ejemplo Menú 2</a></li>
+                        <li><a href=".">Ejemplo Menú 3</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-truck"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Gestión de Translado</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href=".">Ejemplo Menú 1</a></li>
+                        <li><a href=".">Ejemplo Menú 2</a></li>
+                        <li><a href=".">Ejemplo Menú 3</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-times-circle"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Gestión de Bienes Baja</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href=".">Ejemplo Menú 1</a></li>
+                        <li><a href=".">Ejemplo Menú 2</a></li>
+                        <li><a href=".">Ejemplo Menú 3</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-lock-open"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Cierre y Apertura</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href=".">Ejemplo Menú 1</a></li>
+                        <li><a href=".">Ejemplo Menú 2</a></li>
+                        <li><a href=".">Ejemplo Menú 3</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="">
+                  <a href="javascript:void(0)"><i class="fas fa-chart-pie"></i></a>
+                  <div class="sidebarmenu">
+                     <h3 class="menu-title">Reportes</h3>
+                     <ul class="sidebar-menu">
+                        <li><a href=".">Ejemplo Menú 1</a></li>
+                        <li><a href=".">Ejemplo Menú 2</a></li>
+                        <li><a href=".">Ejemplo Menú 3</a></li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="page-wrapper">
+            <div class="row hdr-nav-bar">
+               <div class="col-md-12">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <a class="navbar-brand hidden-lg-up">Horizontal Menu</a>
+                     <!--<a class="navbar-toggler">
+                        <span class="ti-menu" data-toggle="collapse" data-target="#navbarText"></span>
+                        </a>-->
+                     <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                           <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="javascript:void(0)">Gestión de Sistema</a></li>
+                              <li class="breadcrumb-item">Administración de Usuarios</li>
+                           </ol>
+                        </ul>
+                        <div class="call-to-act">
+                           <div class="d-flex no-block">
+                              <div class="ml-auto">
+                                 <button type="button" class="btn btn-success btn-rounded"><i class="fa fa-plus-circle m-r-5"></i> Nuevo Usuario</button>
+                                  <button type="button" class="btn btn-success btn-rounded"><i class="fa fa-plus-circle m-r-5"></i> Nuevo Perfil</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+            <div class="container-fluid">
+               <div class="row page-titles">
+                  <div class="col-md-5 align-self-center">
+                     <h3 class="text-themecolor">Gestión de Sistema</h3>
+                     <p class="text-muted m-t-0 font-12">Administración de Usuarios</p>
+                  </div>
+                  <div class="col-md-7 align-self-center">
+                  </div>
+               </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-xlg-3 col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <center class="m-t-30"> <img src="../assets/images/users/user5.jpg" class="img-circle" width="150">
+                                    <h4 class="card-title m-t-10">Pedro Pablo</h4>
+                                    <h6 class="card-subtitle">Jefe Departamento de Informática</h6>
+                                    <div class="row text-center justify-content-md-center">
+                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i class="fas fa-users"></i> <font class="font-medium">5</font></a></div>
+                                        <div class="col-4"><a href="javascript:void(0)" class="link"><i class="fas fa-check-circle"></i> <font class="font-medium">11</font></a></div>
+                                    </div>
+                                </center>
+                            </div>
+                            <div>
+                                <hr> </div>
+                            <div class="card-body"> 
+                                <small class="text-muted p-t-30 db">Rut</small>
+                                <h5>12.345.678-9</h5> <br>
+                                <small class="text-muted">Email</small>
+                                <h5>pedropablo@sercotec.cl</h5> <br>
+                                <small class="text-muted">Profesión</small>
+                                <h5>Ingeniería en Informática</h5> <br>
+                                <small class="text-muted">Cargo</small>
+                                <h5>Jefe Departamento de Informática</h5> <br>
+                                <small class="text-muted">Perfil</small>
+                                <h5>Usuario Jerfatura</h5> <br>
+                                <small class="text-muted">Tipo Contrato</small>
+                                <h5>Usario Planta</h5> 
+                           </div>
+
+
+                           <hr>
+                           <div class="card-body"> 
+                               <small class="text-muted db">Roles</small>
+                               <button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span> Arica y Parinacota y Tarapacá</button>
+                               &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Antofagasta</button>
+                               &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Metropolitana de Santiago</button>
+                                                
+                           </div> 
+
+                           <hr>
+                           <div class="card-body"> 
+                               <small class="text-muted db">Usuario Responsable</small>
+                               <div class="d-flex m-t-10">
+                                 <img src="../assets/images/users/user1.jpg" alt="user" width="60" height="60" class="img-circle">
+                                 <div class="p-l-20">
+                                    <div class="form-group">
+                                    <h5>Alán González</h5>
+                                    <small class="text-muted">Regional, D.R METROPOLITANA</small>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div> 
+
+                           <hr>
+                           <div class="card-body"> 
+                               <div class="d-flex m-b-10">
+                                  <button type="button" class="btn btn-success btn-rounded" style="margin-left: auto;margin-right: auto;"><i class="fas fa-pencil-alt"></i> Editar Usuario</button>
+                              </div>
+                           </div> 
+                           
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-xlg-9 col-md-7">
+                        <div class="card">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs profile-tab" role="tablist">
+                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Usuarios Asignados</a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Bienes Asignados</a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Centro de Costos Asignados</a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#settings2" role="tab">Historial de Movimientos</a> </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home" role="tabpanel">
+                                    <div class="card-body">
+                                        <div class="table-responsive m-t-20">
+                                    <table class="table vm no-th-brd pro-of-month">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Nombre</th>
+                                                <th>Rut</th>
+                                                <th>Perfil</th>
+                                                <th>Roles</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:50px;"><span class="round"><img src="../assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                                                <td>
+                                                    <h6>Jorge Luis Silva López</h6><small class="text-muted">Desarrolador de Software</small></td>
+                                                <td>17.022.182-6</td>                                             
+                                                 
+                                                <td><span class="label label-success">Dotación, D.R. Metropolitana</span> </td>
+                                                 <td>
+                                                <button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span> Arica y Parinacota y Tarapacá</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Antofagasta</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Metropolitana de Santiago</button>
+                                                </td>
+                                            </tr>
+
+
+                                             <tr>
+                                                <td style="width:50px;"><span class="round"><img src="../assets/images/users/user2.jpg" alt="user" width="50"></span></td>
+                                                <td>
+                                                    <h6>María Romero</h6><small class="text-muted">Desarrolador de Software</small></td>
+                                                <td>17.022.182-6</td>                                             
+                                                 
+                                                <td><span class="label label-success">Dotación, D.R. Metropolitana</span> </td>
+                                                 <td>
+                                                <button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span> Arica y Parinacota y Tarapacá</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Antofagasta</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Metropolitana de Santiago</button>
+                                                </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td style="width:50px;"><span class="round"><img src="../assets/images/users/user3.jpg" alt="user" width="50"></span></td>
+                                                <td>
+                                                    <h6>Katherine Diaz</h6><small class="text-muted">Desarrolador de Software</small></td>
+                                                <td>17.022.182-6</td>                                             
+                                                 
+                                                <td><span class="label label-success">Dotación, D.R. Metropolitana</span> </td>
+                                                 <td>
+                                                <button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span> Arica y Parinacota y Tarapacá</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Antofagasta</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Metropolitana de Santiago</button>
+                                                </td>
+                                            </tr>
+
+
+                                             <tr>
+                                                <td style="width:50px;"><span class="round"><img src="../assets/images/users/user4.jpg" alt="user" width="50"></span></td>
+                                                <td>
+                                                    <h6>Daniela Carmona</h6><small class="text-muted">Desarrolador de Software</small></td>
+                                                <td>17.022.182-6</td>                                             
+                                                 
+                                                <td><span class="label label-success">Dotación, D.R. Metropolitana</span> </td>
+                                                 <td>
+                                                <button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span> Arica y Parinacota y Tarapacá</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Antofagasta</button>
+                                                &nbsp;<button class="btn btn-sm btn-secondary waves-effect waves-light" type="button"><span class="btn-label"><i class="fas fa-times"></i></span>  Metropolitana de Santiago</button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                    </div>
+                                </div>
+                                <!--second tab-->
+                                <div class="tab-pane" id="profile" role="tabpanel">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="inbox-center table-responsive">
+                                                
+                                             <div class="table-responsive m-t-20">
+                                                <table class="table vm no-th-brd pro-of-month">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2">Responsable</th>
+                                                            <th>Id</th>
+                                                            <th>Bien</th>
+                                                            <th>Fecha</th>
+                                                            <th>Comentarios</th>
+                                                            <th>Estado</th>
+                                                            <th>Detalles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                         <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/user5.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Pedro Pablo</h6><small class="text-muted">Jefe Departamento de Informática, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000001</td>
+                                                            <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Pedro Pablo, Jefe Departamento de Informática, D.R. Metropolitana.</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/user5.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Pedro Pablo</h6><small class="text-muted">Jefe Departamento de Informática, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000023</td>
+                                                            <td>Escritorio Axis Wengue</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Pedro Pablo, Jefe Departamento de Informática, D.R. Metropolitana.</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/user5.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Pedro Pablo</h6><small class="text-muted">Jefe Departamento de Informática, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000023</td>
+                                                            <td>Impresora Multifuncional HP Smart Tank 720</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Pedro Pablo, Jefe Departamento de Informática, D.R. Metropolitana.</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/user5.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Pedro Pablo</h6><small class="text-muted">Jefe Departamento de Informática, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000004</td>
+                                                            <td>Silla Oficina Ejecutiva Ergohuman Malla</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Pedro Pablo, Jefe Departamento de Informática, D.R. Metropolitana.</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Jorge Luis Silva</h6><small class="text-muted">Dotación, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000001</td>
+                                                            <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Jorge Luis Silva, Departamento Informática, Dotación, D.R. Metropolitana</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Jorge Luis Silva</h6><small class="text-muted">Dotación, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000023</td>
+                                                            <td>Escritorio Axis Wengue</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Jorge Luis Silva, Departamento Informática, Dotación, D.R. Metropolitana</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Jorge Luis Silva</h6><small class="text-muted">Dotación, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000023</td>
+                                                            <td>Impresora Multifuncional HP Smart Tank 720</td>
+                                                            <td>01/01/2022</td>
+                                                           <td>Movimiento realizado para entrega de funcionario Jorge Luis Silva, Departamento Informática, Dotación, D.R. Metropolitana</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                              <h6>Jorge Luis Silva</h6><small class="text-muted">Dotación, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000004</td>
+                                                            <td>Silla Oficina Ejecutiva Ergohuman Malla</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Jorge Luis Silva, Departamento Informática, Dotación, D.R. Metropolitana</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/user2.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>María Romero</h6><small class="text-muted">Dotación, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000001</td>
+                                                            <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario María Romero, Departamento Informática, Dotación, D.R. Metropolitana</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/user3.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Katherine Diaz</h6><small class="text-muted">Dotación, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000001</td>
+                                                            <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Katherine Diaz, Departamento Informática, Dotación, D.R. Metropolitana</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                         <td style="width:50px;"><span class="round"><img src="../assets/images/users/user4.jpg" alt="user" width="50"></span></td>
+                                                            <td>
+                                                               <h6>Daniela Carmona</h6><small class="text-muted">Dotación, D.R. Metropolitana</small></td>
+                                                            <td>0500300010000001</td>
+                                                            <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
+                                                            <td>01/01/2022</td>
+                                                            <td>Movimiento realizado para entrega de funcionario Daniela Carmona, Departamento Informática, Dotación, D.R. Metropolitana</td>
+                                                            <td><span class="label label-success">Bienes de Alta</span> </td>
+                                                            <td><a href="registro-de-bienes-por-Factura.html"><button type="button" class="btn waves-effect waves-light btn-rounded btn-success">Ver</button></a></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="settings" role="tabpanel">
+                                    <div class="card-body">
+                                      
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="settings2" role="tabpanel">
+                                    <div class="card-body">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <footer class="footer"> © 2021 Sercotec - Activo Fijo </footer>
+         </div>
+      </div>
+
+
+      <script src="../assets/plugins/jquery/jquery.min.js"></script>
+      <!-- Bootstrap popper Core JavaScript -->
+      <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+      <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <!-- slimscrollbar scrollbar JavaScript -->
+      <script src="js/perfect-scrollbar.jquery.min.js"></script>
+      <!--Wave Effects -->
+      <script src="js/waves.js"></script>
+      <!--Menu sidebar -->
+      <script src="js/sidebarmenu.js"></script>
+      <!--Custom JavaScript -->
+      <script src="js/custom.min.js"></script>
+      <script src="js/sidebar.min.js"></script>
+      <!--sparkline JavaScript -->
+      <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+      <!--morris JavaScript -->
+      <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+      <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+      <!--c3 JavaScript -->
+      <script src="../assets/plugins/d3/d3.min.js"></script>
+      <script src="../assets/plugins/c3-master/c3.min.js"></script>
+      <!-- Chart JS -->
+      <script src="js/dashboard3.js"></script>
+      <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+      <script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+      <script src="../assets/plugins/sweetalert/jquery.sweet-alert.custom.js"></script>
+
+      <script src="../assets/plugins/dropify/dist/js/dropify.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Basic
+        $('.dropify').dropify();
+
+        // Translated
+        $('.dropify-fr').dropify({
+            messages: {
+                default: 'Glissez-déposez un fichier ici ou cliquez',
+                replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                remove: 'Supprimer',
+                error: 'Désolé, le fichier trop volumineux'
+            }
+        });
+
+        // Used events
+        var drEvent = $('#input-file-events').dropify();
+
+        drEvent.on('dropify.beforeClear', function(event, element) {
+            return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+        });
+
+        drEvent.on('dropify.afterClear', function(event, element) {
+            alert('File deleted');
+        });
+
+        drEvent.on('dropify.errors', function(event, element) {
+            console.log('Has Errors');
+        });
+
+        var drDestroy = $('#input-file-to-destroy').dropify();
+        drDestroy = drDestroy.data('dropify')
+        $('#toggleDropify').on('click', function(e) {
+            e.preventDefault();
+            if (drDestroy.isDropified()) {
+                drDestroy.destroy();
+            } else {
+                drDestroy.init();
+            }
+        })
+    });
+    </script>
+
+   </body>
+</html>
