@@ -1,163 +1,293 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- Tell the browser to be responsive to screen width -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">-->
-      <link rel="icon" href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-32x32.png" sizes="32x32">
-      <link rel="icon" href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-192x192.png" sizes="192x192">
-      <link rel="apple-touch-icon-precomposed" href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-180x180.png">
-      <meta name="msapplication-TileImage" content="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-270x270.png">
-      <title>Sercotec - Activo Fijo</title>
-      <!-- Bootstrap Core CSS -->
-      <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-      <!-- This page CSS -->
-      <!-- chartist CSS -->
-      <link href="../assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
-      <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
-      <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
-      <!--c3 CSS -->
-      <link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
-      <!-- Custom CSS -->
-      <link href="css/style.css" rel="stylesheet">
-      <!-- Dashboard 1 Page CSS -->
-      <link href="css/pages/dashboard3.css" rel="stylesheet">
-      <!-- You can change the theme colors from here -->
-      <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
-      <link rel="stylesheet" href="../assets/plugins/dropify/dist/css/dropify.min.css">
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-      <style type="text/css">
-         .table td, .table th {
-         padding: 0.75rem;
-         vertical-align: top;
-         border-top: 0px !important;
-         }
-      </style>
-   </head>
-   <body class="fix-header fix-sidebar card-no-border">
-      <div class="preloader">
-         <div class="loader">
-            <div class="loader__figure"></div>
-            <p class="loader__label">Sercotec</p>
-         </div>
-      </div>
-      <div id="main-wrapper">
-         <header class="topbar">
-            <nav class="navbar top-navbar navbar-expand-md navbar-light">
-               <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html">
-                  <b>
-                  <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                  <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-                  </b>
-                  <span>
-                  <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                  <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
-                  </span>
-                  </a>
-               </div>
-               <div class="navbar-collapse">
-                  <ul class="navbar-nav mr-auto">
-                     <!-- <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li> -->
-                  </ul>
-                  <ul class="navbar-nav my-lg-0">
-                     <li class="nav-item hidden-xs-down search-box">
-                        <a class="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
-                        <form class="app-search">
-                           <input type="text" class="form-control" placeholder="Ingrese un valor a Buscar y Presione ENTER"> <a class="srh-btn"><i class="ti-close"></i></a> 
-                        </form>
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <i class="mdi mdi-message"></i>
-                           <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
-                        </a>
-                        <div class="dropdown-menu  dropdown-menu-right  mailbox animated bounceInDown">
-                           <ul>
-                              <li>
-                                 <div class="drop-title">Notificaciones</div>
-                              </li>
-                              <li>
-                                 <div class="message-center">
-                                    <a href="#">
-                                       <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
-                                       <div class="mail-contnet">
-                                          <h5>Notificación de Prueba 1</h5>
-                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
-                                       </div>
-                                    </a>
-                                    <a href="#">
-                                       <div class="btn btn-success btn-circle"><i class="ti-calendar"></i></div>
-                                       <div class="mail-contnet">
-                                          <h5>Notificación de Prueba 2</h5>
-                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
-                                       </div>
-                                    </a>
-                                    <a href="#">
-                                       <div class="btn btn-info btn-circle"><i class="ti-settings"></i></div>
-                                       <div class="mail-contnet">
-                                          <h5>Notificación de Prueba 3</h5>
-                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
-                                       </div>
-                                    </a>
-                                    <a href="#">
-                                       <div class="btn btn-primary btn-circle"><i class="ti-user"></i></div>
-                                       <div class="mail-contnet">
-                                          <h5>Notificación de Prueba 4</h5>
-                                          <span class="mail-desc">Detalles de la Notificación Ejemplo</span> <span class="time">9:30 AM</span> 
-                                       </div>
-                                    </a>
-                                 </div>
-                              </li>
-                              <li>
-                                 <a class="nav-link text-center" href="javascript:void(0);"> <strong>Ver Todas las Notificaciones</strong> <i class="fa fa-angle-right"></i> </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
-                        <div class="dropdown-menu dropdown-menu-right animated bounceInDown">
-                           <ul class="dropdown-user">
-                              <li>
-                                 <div class="dw-user-box">
-                                    <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
-                                    <div class="u-text">
-                                       <h4>Jorge Luis Silva López</h4>
-                                       <p class="text-muted">jorge.silva@social-it.cl</p>
-                                       <a href="pages-profile.html" class="btn btn-rounded btn-success btn-sm">Editar</a>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#"><i class="ti-user"></i> Editar Cuenta</a></li>
-                              <li><a href="#"><i class="ti-wallet"></i> Mis registros</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#"><i class="ti-settings"></i> Cambiar Contraseña</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li>
-                           </ul>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </header>
-         <div class="side-mini-panel">
-            <ul class="mini-nav">
-               <!--<div class="togglediv hidden-sm-down">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<!-- <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">-->
+		<link
+			rel="icon"
+			href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-32x32.png"
+			sizes="32x32"
+		/>
+		<link
+			rel="icon"
+			href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-192x192.png"
+			sizes="192x192"
+		/>
+		<link
+			rel="apple-touch-icon-precomposed"
+			href="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-180x180.png"
+		/>
+		<meta
+			name="msapplication-TileImage"
+			content="https://www.sercotec.cl/wp-content/uploads/2018/09/cropped-favicon-1-270x270.png"
+		/>
+		<title>Sercotec - Activo Fijo</title>
+		<!-- Bootstrap Core CSS -->
+		<link
+			href="../assets/plugins/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css"
+			rel="stylesheet"
+		/>
+		<!-- This page CSS -->
+		<!-- chartist CSS -->
+		<link
+			href="../assets/plugins/sweetalert/sweetalert.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="../assets/plugins/chartist-js/dist/chartist.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css"
+			rel="stylesheet"
+		/>
+		<!--c3 CSS -->
+		<link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet" />
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet" />
+		<!-- Dashboard 1 Page CSS -->
+		<link href="css/pages/dashboard3.css" rel="stylesheet" />
+		<!-- You can change the theme colors from here -->
+		<link href="css/colors/default-dark.css" id="theme" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="../assets/plugins/dropify/dist/css/dropify.min.css"
+		/>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			.table td,
+			.table th {
+				padding: 0.75rem;
+				vertical-align: top;
+				border-top: 0px !important;
+			}
+		</style>
+	</head>
+
+	<body class="fix-header fix-sidebar card-no-border">
+		<div class="preloader">
+			<div class="loader">
+				<div class="loader__figure"></div>
+				<p class="loader__label">Sercotec</p>
+			</div>
+		</div>
+		<div id="main-wrapper">
+			<!--HEADER AQUI-->
+			<header class="topbar">
+				<nav class="navbar top-navbar navbar-expand-md navbar-light">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">
+							<!-- Logo icon --><b>
+								<img
+									src="../assets/images/logo-icon.png"
+									alt="homepage"
+									class="dark-logo"
+								/>
+								<img
+									src="../assets/images/logo-light-icon.png"
+									alt="homepage"
+									class="light-logo"
+								/>
+							</b>
+							<!-- Logo text --><span>
+								<img
+									src="../assets/images/logo-text.png"
+									alt="homepage"
+									class="dark-logo" />
+								<img
+									src="../assets/images/logo-light-text.png"
+									class="light-logo"
+									alt="homepage"
+							/></span>
+						</a>
+					</div>
+					<div class="navbar-collapse">
+						<ul class="navbar-nav mr-auto">
+							<!-- <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li> -->
+						</ul>
+						<ul class="navbar-nav my-lg-0">
+							<li class="nav-item hidden-xs-down search-box">
+								<a
+									class="nav-link hidden-sm-down waves-effect waves-dark"
+									href="javascript:void(0)"
+									><i class="ti-search"></i
+								></a>
+								<form class="app-search">
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Ingrese un valor a Buscar y Presione ENTER"
+									/>
+									<a class="srh-btn"><i class="ti-close"></i></a>
+								</form>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle waves-effect waves-dark"
+									href=""
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<i class="mdi mdi-message"></i>
+									<div class="notify">
+										<span class="heartbit"></span> <span class="point"></span>
+									</div>
+								</a>
+								<div
+									class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown"
+								>
+									<ul>
+										<li>
+											<div class="drop-title">Notificaciones</div>
+										</li>
+										<li>
+											<div class="message-center">
+												<a href="#">
+													<div class="btn btn-danger btn-circle">
+														<i class="fa fa-link"></i>
+													</div>
+													<div class="mail-contnet">
+														<h5>Notificación de Prueba 1</h5>
+														<span class="mail-desc"
+															>Detalles de la Notificación Ejemplo</span
+														>
+														<span class="time">9:30 AM</span>
+													</div>
+												</a>
+												<a href="#">
+													<div class="btn btn-success btn-circle">
+														<i class="ti-calendar"></i>
+													</div>
+													<div class="mail-contnet">
+														<h5>Notificación de Prueba 2</h5>
+														<span class="mail-desc"
+															>Detalles de la Notificación Ejemplo</span
+														>
+														<span class="time">9:30 AM</span>
+													</div>
+												</a>
+												<a href="#">
+													<div class="btn btn-info btn-circle">
+														<i class="ti-settings"></i>
+													</div>
+													<div class="mail-contnet">
+														<h5>Notificación de Prueba 3</h5>
+														<span class="mail-desc"
+															>Detalles de la Notificación Ejemplo</span
+														>
+														<span class="time">9:30 AM</span>
+													</div>
+												</a>
+												<a href="#">
+													<div class="btn btn-primary btn-circle">
+														<i class="ti-user"></i>
+													</div>
+													<div class="mail-contnet">
+														<h5>Notificación de Prueba 4</h5>
+														<span class="mail-desc"
+															>Detalles de la Notificación Ejemplo</span
+														>
+														<span class="time">9:30 AM</span>
+													</div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<a
+												class="nav-link text-center"
+												href="javascript:void(0);"
+											>
+												<strong>Ver Todas las Notificaciones</strong>
+												<i class="fa fa-angle-right"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle waves-effect waves-dark"
+									href=""
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+									><img
+										src="../assets/images/users/1.jpg"
+										alt="user"
+										class="profile-pic"
+								/></a>
+								<div
+									class="dropdown-menu dropdown-menu-right animated bounceInDown"
+								>
+									<ul class="dropdown-user">
+										<li>
+											<div class="dw-user-box">
+												<div class="u-img">
+													<img src="../assets/images/users/1.jpg" alt="user" />
+												</div>
+												<div class="u-text">
+													<h4>Jorge Luis Silva López</h4>
+													<p class="text-muted">jorge.silva@social-it.cl</p>
+													<a
+														href="pages-profile.html"
+														class="btn btn-rounded btn-success btn-sm"
+														>Editar</a
+													>
+												</div>
+											</div>
+										</li>
+										<li role="separator" class="divider"></li>
+										<li>
+											<a href="#"><i class="ti-user"></i> Editar Cuenta</a>
+										</li>
+										<li>
+											<a href="#"><i class="ti-wallet"></i> Mis registros</a>
+										</li>
+										<li role="separator" class="divider"></li>
+										<li>
+											<a href="#"
+												><i class="ti-settings"></i> Cambiar Contraseña</a
+											>
+										</li>
+										<li role="separator" class="divider"></li>
+										<li>
+											<a href="#"
+												><i class="fa fa-power-off"></i> Cerrar Sesión</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<!--MENU COSTADO AQUI-->
+			<div id="menu-costado">
+				<div class="side-mini-panel">
+					<ul class="mini-nav">
+						<!--<div class="togglediv hidden-sm-down">
                   <a href="javascript:void(0)" id="togglebtn"><i class="ti-menu"></i></a>
                   </div>-->
+<<<<<<< HEAD
                <li class="">
                   <a href="javascript:void(0)"><i class="fas fa-tachometer-alt"></i></a>
                   <div class="sidebarmenu">
@@ -859,4 +989,1153 @@
          });
       </script>
    </body>
+=======
+						<li class="">
+							<a href="javascript:void(0)"
+								><i class="fas fa-tachometer-alt"></i
+							></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Dashboard</h3>
+								<ul class="sidebar-menu">
+									<li><a href="index.html" class="active">Inicio</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="">
+							<a href="javascript:void(0)"><i class="fas fa-users"></i></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Gestión de Sistema</h3>
+								<ul class="sidebar-menu">
+									<li><a href=".">Administrador de Usuarios</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="">
+							<a href="javascript:void(0)"><i class="fas fa-file-alt"></i></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Registro de Bienes</h3>
+								<ul class="sidebar-menu">
+									<li>
+										<a href="registro-de-bienes-por-Articulo.html"
+											>Registro de Bienes por Artículo</a
+										>
+									</li>
+									<li>
+										<a href="registro-de-bienes-por-Factura.html"
+											>Registro de Bienes por Factura</a
+										>
+									</li>
+									<li>
+										<a href="registro-de-bienes-masivo.html"
+											>Registro de Bienes Masivo</a
+										>
+									</li>
+									<li>
+										<a href="listado-de-bienes.html">Listados de Bienes</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="">
+							<a href="javascript:void(0)"
+								><i class="fas fa-check-circle"></i
+							></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Gestión de Bienes Alta</h3>
+								<ul class="sidebar-menu">
+									<li><a href="." class="active">Ejemplo Menú 1</a></li>
+									<li><a href=".">Ejemplo Menú 2</a></li>
+									<li><a href=".">Ejemplo Menú 3</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="">
+							<a href="javascript:void(0)"><i class="fas fa-truck"></i></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Gestión de Translado</h3>
+								<ul class="sidebar-menu">
+									<li>
+										<a href="traslado-de-bienes.html"> Traslado de bienes</a>
+									</li>
+									<li><a href=".">Aceptar Traslados de bienes</a></li>
+									<li><a href=".">Historial traslados recientes</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="">
+							<a href="javascript:void(0)"
+								><i class="fas fa-times-circle"></i
+							></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Gestión de Bienes Baja</h3>
+								<ul class="sidebar-menu">
+									<li>
+										<a href="traslado-de-bienes.html">traslado de bienes</a>
+									</li>
+									<li><a href=".">Ejemplo Menú 2</a></li>
+									<li><a href=".">Ejemplo Menú 3</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="">
+							<a href="javascript:void(0)"><i class="fas fa-lock-open"></i></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Cierre y Apertura</h3>
+								<ul class="sidebar-menu">
+									<li><a href=".">Ejemplo Menú 1</a></li>
+									<li><a href=".">Ejemplo Menú 2</a></li>
+									<li><a href=".">Ejemplo Menú 3</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="">
+							<a href="javascript:void(0)"><i class="fas fa-chart-pie"></i></a>
+							<div class="sidebarmenu">
+								<h3 class="menu-title">Reportes</h3>
+								<ul class="sidebar-menu">
+									<li><a href=".">Ejemplo Menú 1</a></li>
+									<li><a href=".">Ejemplo Menú 2</a></li>
+									<li><a href=".">Ejemplo Menú 3</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--Main container-->
+			<div class="page-wrapper">
+				<div class="container-fluid">
+					<div class="row page-titles">
+						<div class="col-md-5 align-self-center">
+							<h3 class="text-themecolor">Traslado de bienes</h3>
+							<p class="text-muted m-t-0 font-12">
+								- Asignaciones y verificación de estado
+							</p>
+						</div>
+						<div class="col-md-7 align-self-center"></div>
+					</div>
+				</div>
+				<!--BUSCADOR BIENES A TRASLADAR-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-body p-b-0">
+								<h3>Filtro de bienes</h3>
+								<form>
+									<div class="form-row">
+										<div class="col-md-4 mb-3">
+											<label for="validationDefault01">Nombre del Bien</label>
+											<input
+												type="text"
+												class="form-control"
+												id="validationDefault01"
+											/>
+										</div>
+										<div class="col-md-4 mb-3">
+											<label for="validationDefault02">Codigo del bien</label>
+											<input
+												type="text"
+												class="form-control"
+												id="validationDefault02"
+												placeholder="XXXX-XXX-XXXX"
+											/>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-5 mb-3">
+											<label for="validationDefault03">Centro de costos</label>
+											<select class="form-control">
+												<option>GERENCIA COMUNICACIONES</option>
+												<option>GERENCIA TECNOLOGÍA Y SISTEMAS</option>
+												<option>GERENCIA PERSONAS</option>
+												<option>GERENCIA ADMINISTRACIÓN Y FINANZAS</option>
+											</select>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationDefault04">Oficina</label>
+											<select class="form-control">
+												<option>- - -</option>
+												<option>Oficina A</option>
+												<option>Oficina B</option>
+												<option>Oficina C</option>
+												<option>Oficina D</option>
+											</select>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationDefault05">Familia</label>
+											<select class="form-control">
+												<option>Computadores</option>
+												<option>Muebles</option>
+												<option>Muebles y enceres</option>
+												<option>Vehiculos</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="checkbox"
+												value=""
+												id="invalidCheck2"
+												required
+											/>
+											<label class="form-check-label" for="invalidCheck2">
+												Incluir bienes pendientes de traslado
+											</label>
+											<input
+												class="form-check-input"
+												type="checkbox"
+												value=""
+												id="invalidCheck3"
+												required
+											/>
+											<label class="form-check-label" for="invalidCheck3">
+												Solo mostrar bienes sin asignaciones
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<button class="btn btn-primary" type="submit">
+											Buscar
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--END BUSCADOR BIENES A TRASLADAR-->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-body p-b-0">
+								<h3>Seleccion</h3>
+								<ul class="nav nav-tabs customtab" role="tablist">
+									<li class="nav-item">
+										<a
+											class="nav-link active"
+											data-toggle="tab"
+											href="#home2"
+											role="tab"
+											><span class="hidden-sm-up"><i class="ti-home"></i></span>
+											<span class="hidden-xs-down">Bienes</span></a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link"
+											data-toggle="tab"
+											href="#profile2"
+											role="tab"
+											><span class="hidden-sm-up"><i class="ti-user"></i></span>
+											<span class="hidden-xs-down"
+												>Pendientes de asignación</span
+											></a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link"
+											data-toggle="tab"
+											href="#profile3"
+											role="tab"
+											><span class="hidden-sm-up"><i class="ti-user"></i></span>
+											<span class="hidden-xs-down">Lista de espera</span></a
+										>
+									</li>
+								</ul>
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div class="tab-pane active" id="home2" role="tabpanel">
+										<div class="table-responsive">
+											<table class="table vm no-th-brd pro-of-month">
+												<thead>
+													<tr>
+														<th>
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																width="16"
+																height="16"
+																fill="currentColor"
+																class="bi bi-check-square"
+																viewBox="0 0 16 16"
+															>
+																<path
+																	d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+																/>
+																<path
+																	d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"
+																/>
+															</svg>
+														</th>
+														<th>ID</th>
+														<th colspan="1">Nombre</th>
+														<th>Estado</th>
+														<th>Familia</th>
+														<th>Tipo</th>
+														<th>C.Costos actual</th>
+														<th>Asignación Actual</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<input
+																class="form-check-input"
+																type="checkbox"
+																value=""
+																id="EmptyCheck"
+																required
+															/>
+															<label class="form-check-label" for="EmptyCheck">
+															</label>
+														</td>
+														<td>01</td>
+
+														<td>Notebook HP PV3728</td>
+														<td>
+															<span class="badge badge-success">Asignado</span>
+														</td>
+
+														<td>Dispositivos</td>
+														<td>Computador</td>
+														<td>GERENCIA PERSONAS</td>
+														<td>Jorge Espinoza</td>
+													</tr>
+
+													<tr>
+														<td>
+															<input
+																class="form-check-input"
+																type="checkbox"
+																value=""
+																id="EmptyCheck"
+																required
+															/>
+															<label class="form-check-label" for="EmptyCheck">
+															</label>
+														</td>
+														<td>01</td>
+
+														<td>Notebook HP PV3728</td>
+														<td>
+															<span class="badge badge-success">Pendiente</span>
+														</td>
+
+														<td>Dispositivos</td>
+														<td>Computador</td>
+														<td>GERENCIA PERSONAS</td>
+														<td>Jorge Espinoza</td>
+													</tr>
+
+													<tr>
+														<td>
+															<input
+																class="form-check-input"
+																type="checkbox"
+																value=""
+																id="EmptyCheck"
+																required
+															/>
+															<label class="form-check-label" for="EmptyCheck">
+															</label>
+														</td>
+														<td>01</td>
+
+														<td>Notebook HP PV3728</td>
+														<td>
+															<span class="badge badge-success">Asignado</span>
+														</td>
+
+														<td>Dispositivos</td>
+														<td>Computador</td>
+														<td>GERENCIA PERSONAS</td>
+														<td>Jorge Espinoza</td>
+													</tr>
+
+													<tr>
+														<td>
+															<input
+																class="form-check-input"
+																type="checkbox"
+																value=""
+																id="EmptyCheck"
+																required
+															/>
+															<label class="form-check-label" for="EmptyCheck">
+															</label>
+														</td>
+														<td>01</td>
+
+														<td>Notebook HP PV3728</td>
+														<td>
+															<span class="badge badge-success">Asignado</span>
+														</td>
+
+														<td>Dispositivos</td>
+														<td>Computador</td>
+														<td>GERENCIA PERSONAS</td>
+														<td>Jorge Espinoza</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="tab-pane" id="profile2" role="tabpanel">
+										<table class="table vm no-th-brd pro-of-month">
+											<thead>
+												<tr>
+													<th>Código</th>
+													<th colspan="2">Nombre</th>
+													<th>Familia</th>
+													<th>Vigencia</th>
+													<th>Ver</th>
+													<th>Editar</th>
+													<th>Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td><i class="fas fa-cube fa-w-14 fa-2x"></i></td>
+													<td>MESAS</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>02</td>
+													<td><i class="fas fa-cube fa-w-14 fa-2x"></i></td>
+													<td>MESONES</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>03</td>
+													<td><i class="fas fa-cube fa-w-14 fa-2x"></i></td>
+													<td>SILLAS</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>04</td>
+													<td><i class="fas fa-cube fa-w-14 fa-2x"></i></td>
+													<td>SILLONES</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div class="tab-pane" id="profile3" role="tabpanel">
+										<table class="table vm no-th-brd pro-of-month">
+											<thead>
+												<tr>
+													<th>Código</th>
+													<th colspan="2">Nombre</th>
+													<th>Familia</th>
+													<th>Clase</th>
+													<th>Vigencia</th>
+													<th>Ver</th>
+													<th>Editar</th>
+													<th>Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>01</td>
+													<td>
+														<i class="fas fa-square-full fa-w-14 fa-2x"></i>
+													</td>
+													<td>GIRATORIA C/BRAZO C/RUEDAS</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-info">003 SILLAS</span>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>02</td>
+													<td>
+														<i class="fas fa-square-full fa-w-14 fa-2x"></i>
+													</td>
+													<td>GIRATORIA S/BRAZO C/RUEDAS</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-info">003 SILLAS</span>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>03</td>
+													<td>
+														<i class="fas fa-square-full fa-w-14 fa-2x"></i>
+													</td>
+													<td>MADERA / LANILLA</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-info">003 SILLAS</span>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>04</td>
+													<td>
+														<i class="fas fa-square-full fa-w-14 fa-2x"></i>
+													</td>
+													<td>METÁLICA / LANILLA</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-info">003 SILLAS</span>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>05</td>
+													<td>
+														<i class="fas fa-square-full fa-w-14 fa-2x"></i>
+													</td>
+													<td>PLÁSTICA</td>
+													<td>
+														<span class="badge badge-info"
+															>05 MUEBLES Y ENSERES</span
+														>
+													</td>
+													<td>
+														<span class="badge badge-info">003 SILLAS</span>
+													</td>
+													<td>
+														<span class="badge badge-success">Vigente</span>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-external-link-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-success btn-circle"
+														>
+															<i class="fas fa-pencil-alt"></i>
+														</button>
+													</td>
+													<td>
+														<button
+															type="button"
+															class="btn btn-danger btn-circle"
+														>
+															<i class="fas fa-trash-alt"></i>
+														</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer">© 2021 Sercotec - Activo Fijo</footer>
+			</div>
+		</div>
+
+		<div
+			class="modal fade bs-example-modal-lg"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="myLargeModalLabel"
+			aria-hidden="true"
+			style="display: none"
+		>
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myLargeModalLabel">Nuevo Familia</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-hidden="true"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form class="form-material"></form>
+
+						<form class="form-material">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="form-group">
+										<label>Nombre</label>
+										<input type="text" class="form-control form-control-line" />
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Vigencia</label>
+										<select class="form-control">
+											<option>Vigente</option>
+											<option>Caducado</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-success waves-effect text-left"
+						>
+							Guardar
+						</button>
+						<button
+							type="button"
+							class="btn btn-danger waves-effect text-left"
+							data-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+
+		<div
+			class="modal fade bs-example-modal-lg2"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="myLargeModalLabel"
+			aria-hidden="true"
+			style="display: none"
+		>
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myLargeModalLabel">Nueva Clase</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-hidden="true"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form class="form-material">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="form-group">
+										<label>Nombre</label>
+										<input type="text" class="form-control form-control-line" />
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Vigencia</label>
+										<select class="form-control">
+											<option>Vigente</option>
+											<option>Caducado</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label>Familia</label>
+
+										<div class="row">
+											<div class="col-md-8">
+												<input
+													type="text"
+													class="form-control form-control-line"
+												/>
+											</div>
+											<div class="col-md-4">
+												<button
+													type="button"
+													class="btn waves-effect waves-light btn-rounded btn-info float-right"
+													data-toggle="modal"
+													data-target="#modalProveedor"
+												>
+													<i class="fas fa-search"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-success waves-effect text-left"
+						>
+							Guardar
+						</button>
+						<button
+							type="button"
+							class="btn btn-danger waves-effect text-left"
+							data-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+
+		<div
+			class="modal fade bs-example-modal-lg3"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="myLargeModalLabel"
+			aria-hidden="true"
+			style="display: none"
+		>
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myLargeModalLabel">Nuevo Tipo</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-hidden="true"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form class="form-material">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="form-group">
+										<label>Nombre</label>
+										<input type="text" class="form-control form-control-line" />
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Vigencia</label>
+										<select class="form-control">
+											<option>Vigente</option>
+											<option>Caducado</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Familia</label>
+
+										<div class="row">
+											<div class="col-md-8">
+												<input
+													type="text"
+													class="form-control form-control-line"
+												/>
+											</div>
+											<div class="col-md-4">
+												<button
+													type="button"
+													class="btn waves-effect waves-light btn-rounded btn-info float-right"
+													data-toggle="modal"
+													data-target="#modalProveedor"
+												>
+													<i class="fas fa-search"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Clase</label>
+
+										<div class="row">
+											<div class="col-md-8">
+												<input
+													type="text"
+													class="form-control form-control-line"
+												/>
+											</div>
+											<div class="col-md-4">
+												<button
+													type="button"
+													class="btn waves-effect waves-light btn-rounded btn-info float-right"
+													data-toggle="modal"
+													data-target="#modalProveedor"
+												>
+													<i class="fas fa-search"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-success waves-effect text-left"
+						>
+							Guardar
+						</button>
+						<button
+							type="button"
+							class="btn btn-danger waves-effect text-left"
+							data-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+
+		<script src="../assets/plugins/jquery/jquery.min.js"></script>
+		<!-- Bootstrap popper Core JavaScript -->
+		<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- slimscrollbar scrollbar JavaScript -->
+		<script src="js/perfect-scrollbar.jquery.min.js"></script>
+		<!--Wave Effects -->
+		<script src="js/waves.js"></script>
+		<!--Menu sidebar -->
+		<script src="js/sidebarmenu.js"></script>
+		<!--Custom JavaScript -->
+		<script src="js/custom.min.js"></script>
+		<script src="js/sidebar.min.js"></script>
+		<!--sparkline JavaScript -->
+		<script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+		<!--morris JavaScript -->
+		<script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+		<script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+		<!--c3 JavaScript -->
+		<script src="../assets/plugins/d3/d3.min.js"></script>
+		<script src="../assets/plugins/c3-master/c3.min.js"></script>
+		<!-- Chart JS -->
+		<script src="js/dashboard3.js"></script>
+		<script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+		<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+		<script src="../assets/plugins/sweetalert/jquery.sweet-alert.custom.js"></script>
+		<script src="../assets/plugins/dropify/dist/js/dropify.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				// Basic
+				$(".dropify").dropify();
+
+				// Translated
+				$(".dropify-fr").dropify({
+					messages: {
+						default: "Glissez-déposez un fichier ici ou cliquez",
+						replace: "Glissez-déposez un fichier ou cliquez pour remplacer",
+						remove: "Supprimer",
+						error: "Désolé, le fichier trop volumineux",
+					},
+				});
+
+				// Used events
+				var drEvent = $("#input-file-events").dropify();
+
+				drEvent.on("dropify.beforeClear", function (event, element) {
+					return confirm(
+						'Do you really want to delete "' + element.file.name + '" ?'
+					);
+				});
+
+				drEvent.on("dropify.afterClear", function (event, element) {
+					alert("File deleted");
+				});
+
+				drEvent.on("dropify.errors", function (event, element) {
+					console.log("Has Errors");
+				});
+
+				var drDestroy = $("#input-file-to-destroy").dropify();
+				drDestroy = drDestroy.data("dropify");
+				$("#toggleDropify").on("click", function (e) {
+					e.preventDefault();
+					if (drDestroy.isDropified()) {
+						drDestroy.destroy();
+					} else {
+						drDestroy.init();
+					}
+				});
+			});
+		</script>
+	</body>
+>>>>>>> 461196546cba1236b24850c8b923c7e5cc8b91ac
 </html>
