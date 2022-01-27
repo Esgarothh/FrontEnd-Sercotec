@@ -276,7 +276,7 @@
             <div class="container-fluid">
                <div class="row page-titles">
                   <div class="col-md-5 align-self-center">
-                     <h3 class="text-themecolor">Selección de bienes</h3>
+                     <h3 class="text-themecolor">Autorización de lotes</h3>
                   </div>
                   <div class="col-md-7 align-self-center">
                   </div>
@@ -285,150 +285,16 @@
                   <div class="col-lg-12">
                      <div class="card">
                         <div class="row">
-                           <div class="col-lg-3 col-md-4">
-                              <div class="card-body inbox-panel">
-                                 <form class="form-material p-l-20">
-                                    <div class="form-group">
-                                       <label>Buscar por ID</label>
-                                       <input type="text" class="form-control form-control-line" value=""> 
-                                    </div>
-                                    <div class="form-group">
-                                       <label>Buscar por funcionario</label>
-                                       <input type="text" class="form-control form-control-line" value=""> 
-                                    </div>
-                                    <div class="form-group">
-                                       <label>Buscar por centro de costo</label>
-                                       <select class="form-control">
-                                          <option>Gerencia general</option>
-                                          <option>Gerencia comunicaciones</option>
-                                          <option>Gerencia tecnología y sistemas</option>
-                                          <option>Gerencia centro empresarial</option>
-                                       </select>
-                                    </div>
-                                    <div class="form-group">
-                                       <label>Buscar por oficina</label>
-                                       <select class="form-control">
-                                          <option>Seleccionar oficina</option>
-                                       </select>
-                                    </div>
-                                 </form>
-                                 <a href="#" class="btn btn-info m-b-20 p-10 btn-block waves-effect waves-light">Buscar</a>
-                              </div>
-                           </div>
-                           <div class="col-lg-9 col-md-10 bg-light-part b-l">
-                              <div class="card-body">
-                                 <div class="row">
-                                    <div class="col-md-9">
-                                       <h4 class="card-title">Listado de bienes</h4>
-                                       <h4 class="card-title">
-                                          Texto prueba
-                                       </h4>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="btn-group float-right" role="group">
-                                          <button id="btnGroupDrop1" type="button" class="btn btn-secondary font-12 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Ordenar </button>
-                                          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 43px, 0px); top: 0px; left: 0px; will-change: transform;"> <a class="dropdown-item" href="#">Id (Descendente)</a> <a class="dropdown-item" href="#">Id (Ascendente)</a> </div>
-                                       </div>
-                                       <div class="dt-buttons float-right"><a class="dt-button buttons-csv buttons-html5 btn btn-primary mr-1" tabindex="0" aria-controls="example23" href="#"><span>CSV</span></a><a class="dt-button buttons-excel buttons-html5 btn btn-primary mr-1" tabindex="0" aria-controls="example23" href="#"><span>Excel</span></a><a class="dt-button buttons-pdf buttons-html5 btn btn-primary mr-1" tabindex="0" aria-controls="example23" href="#"><span>PDF</span></a></div>
-                                       
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="card-body p-t-0">
-                                 <div class="card b-all shadow-none">
-                                    <div class="inbox-center table-responsive">
-                                       <div class="table-responsive m-t-20">
-                                          <table class="table vm no-th-brd pro-of-month">
-                                             <thead>
-                                                <tr>
-                                                   <th>Id</th>
-                                                   <th>Descripción</th>
-                                                   <th>Centro de costo</th>
-                                                   <th>Oficina</th>
-                                                   <th>Familia</th>
-                                                   <th>Clase</th>
-                                                   <th>Tipo</th>
-                                                   <th>Motivo</th>
-                                                   <th>Seleccionar</th>
-                                                </tr>
-                                             </thead>
-                                             <tbody>
-                                                <tr>
-                                                   <td><span class="text-muted"><i>(Aún sin Id)</i></span></td>
-                                                   <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
-                                                   <td>Gerencia general</td>
-                                                   <td>-</td>
-                                                   <td>Maquinas y equipos</td>
-                                                   <td>Notebook</td>
-                                                   <td>Notebook</td>
-                                                   <td>
-                                                      <select class="form-control">
-                                                         <option>Bienes sujetos a venta</option>
-                                                         <option>Bienes no sujetos a venta</option>
-                                                         <option>Bienes por siniestro, robo, hurto o extravío</option>
-                                                      </select>
-                                                   </td>
-                                                   <td><div
-                                                    class="modal fade bs-example-modal-lg"
-                                                    tabindex="-1"
-                                                    role="dialog"
-                                                    aria-labelledby="myLargeModalLabel"
-                                                    aria-hidden="true"
-                                                    style="display: none">
-                                                </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>0500300010000001</td>
-                                                   <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
-                                                   <td>Gerencia comunicaciones</td>
-                                                   <td>-</td>
-                                                   <td>Maquinas y equipos </td>
-                                                   <td>Notebook</td>
-                                                   <td>Notebook</td>
-                                                   <td>
-                                                      <select class="form-control">
-                                                         <option>Bienes sujetos a venta</option>
-                                                         <option>Bienes no sujetos a venta</option>
-                                                         <option>Bienes por siniestro, robo, hurto o extravío</option>
-                                                      </select>
-                                                   </td>
-                                                   <td><input type="checkbox"></td>
-                                                </tr>
-                                                <tr>
-                                                   <td>0500300010000001</td>
-                                                   <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
-                                                   <td>Gerencia tecnología y sistemas</td>
-                                                   <td>-</td>
-                                                   <td>Maquinas y equipos </td>
-                                                   <td>Notebook</td>
-                                                   <td>Notebook</td>
-                                                   <td>
-                                                      <select class="form-control">
-                                                         <option>Bienes sujetos a venta</option>
-                                                         <option>Bienes no sujetos a venta</option>
-                                                         <option>Bienes por siniestro, robo, hurto o extravío</option>
-                                                      </select>
-                                                   </td>
-                                                   <td><input type="checkbox"></td>
-                                                </tr>
-                                             </tbody>
-                                          </table>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <a href="#" style="margin-left: auto;margin-right: auto;"class="btn btn-info waves-effect waves-light">Agregar</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                            <div class="card-body inbox-panel">
 
+                                     
                      <div class="card">
                         <div class="row">
                            <div class="col-lg-9 col-xl-12 bg-light-part b-l">
                               <div class="card-body">
                                  <div class="row">
                                     <div class="col-md-9">
-                                       <h4 class="card-title">Bienes en proceso de baja</h4>
+                                       <h4 class="card-title">Información lote 28</h4>
                                     </div>
                                     <div class="col-md-3">
                                        <div class="btn-group float-right" role="group">
@@ -445,65 +311,65 @@
                                           <table class="table vm no-th-brd pro-of-month">
                                              <thead>
                                                 <tr>
-                                                   <th>Id</th>
-                                                   <th>Descripción</th>
-                                                   <th>Centro de costo</th>
+                                                   <th>Seleccionar</th>
                                                    <th>Oficina</th>
+                                                   <th>Suboficina</th>
+                                                   <th>Detalle</th>
                                                    <th>Familia</th>
                                                    <th>Clase</th>
                                                    <th>Tipo</th>
-                                                   <th>Fecha compra</th>
-                                                   <th>Valor compra</th>
+                                                   <th>Id</th>
+                                                   <th>Secuencial</th>
                                                    <th>Tipo baja</th>
                                                    <th>Reversar</th>
                                                 </tr>
                                              </thead>
                                              <tbody>
                                                 <tr>
-                                                   <td><span class="text-muted"><i>(Aún sin Id)</i></span></td>
-                                                   <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
-                                                   <td>Gerencia general</td>
-                                                   <td>-</td>
-                                                   <td>Maquinas y equipos</td>
-                                                   <td>Notebook</td>
-                                                   <td>Notebook</td>
-                                                   <td>24-01-2022</td>
-                                                   <td>250000</td>
-                                                   <td>Bienes sujetos a venta</td>                                                   
-                                                   <td><button type="button" class="btn btn-danger btn-circle"><i class="fas fa-trash-alt"></i></button></td>
+                                                    <td><input class="form-check-input" type="checkbox" value=""/></td>                                  
+                                                    <td>OFICINA 1</td>
+                                                    <td>SUBOFICINA 1</td>
+                                                    <td>DETALLE</td>
+                                                    <td>4</td>
+                                                    <td>4</td>
+                                                    <td>2</td>
+                                                    <td>00000121328</td>
+                                                    <td>O2342</td>
+                                                    <td>DESUSO</td>
+                                                    <td><button type="button" class="btn btn-danger btn-circle"><i class="fas fa-trash-alt"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                   <td>0500300010000001</td>
-                                                   <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
-                                                   <td>Gerencia comunicaciones</td>
-                                                   <td>-</td>
-                                                   <td>Maquinas y equipos </td>
-                                                   <td>Notebook</td>
-                                                   <td>Notebook</td>
-                                                   <td>24-01-2022</td>
-                                                   <td>350000</td>
-                                                   <td>Bienes sujetos a venta</td>                                                                                                                                                    
-                                                   <td><button type="button" class="btn btn-danger btn-circle"><i class="fas fa-trash-alt"></i></button></td>
+                                                    <td><input class="form-check-input" type="checkbox" value=""/></td>                                  
+                                                    <td>OFICINA 2</td>
+                                                    <td>SUBOFICINA 2</td>
+                                                    <td>DETALLE</td>
+                                                    <td>6</td>
+                                                    <td>2</td>
+                                                    <td>6</td>
+                                                    <td>000001213278</td>
+                                                    <td>O2322</td>
+                                                    <td>DESUSO</td>
+                                                    <td><button type="button" class="btn btn-danger btn-circle"><i class="fas fa-trash-alt"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                   <td>0500300010000001</td>
-                                                   <td>Notebook Dell R7-3700U AMD Ryzen 7 8GB RAM 512GB SSD 15.6"</td>
-                                                   <td>Gerencia tecnología y sistemas</td>
-                                                   <td>-</td>
-                                                   <td>Maquinas y equipos </td>
-                                                   <td>Notebook</td>
-                                                   <td>Notebook</td>
-                                                   <td>24-01-2022</td>
-                                                   <td>150000</td>
-                                                   <td>Bienes sujetos a venta</td>                                                 
-                                                   <td><button type="button" class="btn btn-danger btn-circle"><i class="fas fa-trash-alt"></i></button></td>
+                                                    <td><input class="form-check-input" type="checkbox" value=""/></td>                                  
+                                                    <td>OFICINA 3</td>
+                                                    <td>SUBOFICINA 3</td>
+                                                    <td>DETALLE</td>
+                                                    <td>8</td>
+                                                    <td>2</td>
+                                                    <td>6</td>
+                                                    <td>000001214564</td>
+                                                    <td>O6782</td>
+                                                    <td>DESUSO</td>
+                                                    <td><button type="button" class="btn btn-danger btn-circle"><i class="fas fa-trash-alt"></i></button></td>
                                                 </tr>
                                              </tbody>
                                           </table>
                                        </div>
                                     </div>
                                  </div>
-                                 <a href="#" style="text-align:center;"class="btn btn-info waves-effect waves-light">Notificar bajas</a>
+                                 <a href="autorizacion-bajas-gerencial.html" style="margin-left: auto;margin-right: auto;"class="btn btn-info waves-effect waves-light">Autorizar</a>
                               </div>
                            </div>
                         </div>
